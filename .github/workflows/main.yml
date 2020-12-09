@@ -39,6 +39,8 @@ jobs:
       run: sudo CI=false npm install --save react-chartjs-2 chart.js
     - name: Installing react-router-dom
       run: sudo CI=false npm install react-router-dom@6.0.0-alpha.0
+    - name: Adding history package
+      run: yarn add history
     - name: Running yarn build
       run: CI=false yarn build
 
