@@ -37,8 +37,9 @@ jobs:
       run: sudo CI=false npm install @material-ui/icons
     - name: Installing Chart.js
       run: sudo CI=false npm install --save react-chartjs-2 chart.js
-    - name: Making it readable for browser, as it is almost impossible right now
-      
+    - name: Installing react-router-dom
+      run: sudo CI=false npm install react-router-dom@6.0.0-alpha.0
+    - name: Running yarn build
       run: CI=false yarn build
 
 
