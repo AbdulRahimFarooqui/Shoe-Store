@@ -7,8 +7,9 @@ import shoes from './../shoes.json'
 function ProductDetails() {
   const { id } = useParams();
   return (
-    <div class>
+    <div >
       <h1 style={{ color: "lightGreen", textAlign: "center" }}>Great choice!</h1>
+      <h3>{shoes[id].name}</h3>
       <div className="productDetails">
         <img src={shoes[id].img} alt={`img not available for ${id}`} />
 
