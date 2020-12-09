@@ -27,7 +27,7 @@ jobs:
       with:
         node-version: 12 
     - name: GitHub Action for Yarn
-      uses: borales/actions-yarn@v2.0.0
+      uses: Borales/actions-yarn@v2.3.0
       with:
          # Yarn command
          cmd: install #Setting up dependencies for our react app by installing yarn
